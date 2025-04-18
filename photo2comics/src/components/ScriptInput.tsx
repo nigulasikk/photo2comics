@@ -20,13 +20,13 @@ const ScriptInput: React.FC<ScriptInputProps> = ({
   return (
     <div className="space-y-4">
       <div className="flex justify-between items-center">
-        <h2 className="text-lg font-medium">Comic Script</h2>
+        <h2 className="text-lg font-medium">漫画脚本</h2>
         <button
           type="button"
           onClick={() => setShowTemplates(!showTemplates)}
           className="text-sm text-blue-600 hover:text-blue-800"
         >
-          {showTemplates ? 'Hide Templates' : 'Show Templates'}
+          {showTemplates ? '隐藏模板' : '显示模板'}
         </button>
       </div>
       
@@ -48,7 +48,7 @@ const ScriptInput: React.FC<ScriptInputProps> = ({
       <textarea
         value={script}
         onChange={(e) => onScriptChange(e.target.value)}
-        placeholder="Enter your comic script here or select a template above..."
+        placeholder="在此输入您的漫画脚本或从上方选择模板..."
         className="w-full h-40 p-3 border rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
     </div>

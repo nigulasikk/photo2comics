@@ -12,7 +12,7 @@ const StyleSelection: React.FC<StyleSelectionProps> = ({
 }) => {
   return (
     <div className="space-y-4">
-      <h2 className="text-lg font-medium">Select Comic Style</h2>
+      <h2 className="text-lg font-medium">选择漫画风格</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {COMIC_STYLES.map((style) => (
           <div 

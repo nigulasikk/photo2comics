@@ -38,10 +38,10 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
       <input {...getInputProps()} />
       <Upload className="mx-auto h-12 w-12 text-gray-400" />
       <p className="mt-2 text-sm text-gray-600">
-        Drag &amp; drop images here, or click to select files
+        拖放图片到这里，或点击选择文件
       </p>
       <p className="text-xs text-gray-500 mt-1">
-        Supports JPG, PNG (max {maxFiles} files)
+        支持JPG、PNG格式（最多{maxFiles}个文件）
       </p>
     </div>
   );
