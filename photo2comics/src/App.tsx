@@ -59,7 +59,7 @@ function App() {
         script
       });
       
-      setGeneratedComic(response.content ? [response.content] : []);
+      setGeneratedComic(response.images && response.images.length > 0 ? response.images : []);
     } catch (err) {
       console.error('生成漫画时出错:', err);
       setError('生成漫画失败。请重试。');
